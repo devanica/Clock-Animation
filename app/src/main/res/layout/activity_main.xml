@@ -14,6 +14,7 @@
         android:layout_height="300dp"
         android:src="@drawable/circle"
         android:tint="@color/colorPrimary"
+        android:layout_marginTop="80dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -56,8 +57,8 @@
     <ImageView
         android:id="@+id/minutes"
         android:layout_width="5dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="80dp"
         android:src="@drawable/line"
         app:layout_constraintEnd_toEndOf="@+id/iv_circleOne"
         app:layout_constraintStart_toStartOf="@+id/iv_circleOne"
@@ -67,13 +68,12 @@
     <ImageView
         android:id="@+id/hours"
         android:layout_width="5dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
         android:src="@drawable/line"
         app:layout_constraintEnd_toEndOf="@+id/iv_circleOne"
         app:layout_constraintStart_toStartOf="@+id/iv_circleOne"
         app:layout_constraintTop_toTopOf="@+id/iv_circleOne">
     </ImageView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

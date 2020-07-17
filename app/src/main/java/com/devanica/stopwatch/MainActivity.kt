@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     var minToFloat = 6f
 
     var hourFromFloat = 0f
-    var hourToFloat = 6f
+    var hourToFloat = 30f
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -81,7 +81,7 @@ class MainActivity : AppCompatActivity() {
             override fun onAnimationEnd(animation: Animation?) {
                 minFromFloat = minToFloat
                 minToFloat += 6f
-                animateSeconds(minutes, minFromFloat, minToFloat)
+                animateMinutes(minutes, minFromFloat, minToFloat)
             }
         })
 
@@ -110,8 +110,8 @@ class MainActivity : AppCompatActivity() {
 
             override fun onAnimationEnd(animation: Animation?) {
                 hourFromFloat = hourToFloat
-                hourToFloat += 6f
-                animateSeconds(hours, hourFromFloat, hourToFloat)
+                hourToFloat += 30f
+                animateHours(hours, hourFromFloat, hourToFloat)
             }
         })
 
