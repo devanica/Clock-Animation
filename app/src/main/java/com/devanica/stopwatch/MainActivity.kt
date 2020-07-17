@@ -1,11 +1,11 @@
 package com.devanica.stopwatch
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.Animation
 import android.view.animation.LinearInterpolator
 import android.view.animation.RotateAnimation
 import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -28,13 +28,13 @@ class MainActivity : AppCompatActivity() {
         animateHours(hours, hourFromFloat, hourToFloat)
     }
 
-    private fun animateSeconds(view: ImageView, from: Float, to: Float){
+    private fun animateSeconds(view: ImageView, from: Float, to: Float) {
         val rotate = RotateAnimation(
-                        from,
-                        to,
-                        Animation.RELATIVE_TO_SELF,
+            from,
+            to,
+            Animation.RELATIVE_TO_SELF,
             1.0f,
-                        Animation.RELATIVE_TO_SELF,
+            Animation.RELATIVE_TO_SELF,
             1.0f
         )
         rotate.duration = 1000
@@ -58,13 +58,13 @@ class MainActivity : AppCompatActivity() {
         view.startAnimation(rotate)
     }
 
-    private fun animateMinutes(view: ImageView, from: Float, to: Float){
+    private fun animateMinutes(view: ImageView, from: Float, to: Float) {
         val rotate = RotateAnimation(
-                        from,
-                        to,
-                        Animation.RELATIVE_TO_SELF,
+            from,
+            to,
+            Animation.RELATIVE_TO_SELF,
             1.0f,
-                        Animation.RELATIVE_TO_SELF,
+            Animation.RELATIVE_TO_SELF,
             1.0f
         )
         rotate.duration = 60000
@@ -88,13 +88,13 @@ class MainActivity : AppCompatActivity() {
         view.startAnimation(rotate)
     }
 
-    private fun animateHours(view: ImageView, from: Float, to: Float){
+    private fun animateHours(view: ImageView, from: Float, to: Float) {
         val rotate = RotateAnimation(
-                        from,
-                        to,
-                        Animation.RELATIVE_TO_SELF,
+            from,
+            to,
+            Animation.RELATIVE_TO_SELF,
             1.0f,
-                        Animation.RELATIVE_TO_SELF,
+            Animation.RELATIVE_TO_SELF,
             1.0f
         )
         rotate.duration = 3600000
