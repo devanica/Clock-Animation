@@ -30,11 +30,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun animateSeconds(view: ImageView, from: Float, to: Float){
         val rotate = RotateAnimation(
-                from,
-                to,
-                Animation.RELATIVE_TO_SELF,
+                        from,
+                        to,
+                        Animation.RELATIVE_TO_SELF,
             1.0f,
-                Animation.RELATIVE_TO_SELF,
+                        Animation.RELATIVE_TO_SELF,
             1.0f
         )
         rotate.duration = 1000
@@ -60,11 +60,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun animateMinutes(view: ImageView, from: Float, to: Float){
         val rotate = RotateAnimation(
-                from,
-                to,
-            Animation.RELATIVE_TO_SELF,
+                        from,
+                        to,
+                        Animation.RELATIVE_TO_SELF,
             1.0f,
-            Animation.RELATIVE_TO_SELF,
+                        Animation.RELATIVE_TO_SELF,
             1.0f
         )
         rotate.duration = 60000
@@ -90,11 +90,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun animateHours(view: ImageView, from: Float, to: Float){
         val rotate = RotateAnimation(
-                from,
-                to,
-                Animation.RELATIVE_TO_SELF,
+                        from,
+                        to,
+                        Animation.RELATIVE_TO_SELF,
             1.0f,
-                Animation.RELATIVE_TO_SELF,
+                        Animation.RELATIVE_TO_SELF,
             1.0f
         )
         rotate.duration = 3600000
