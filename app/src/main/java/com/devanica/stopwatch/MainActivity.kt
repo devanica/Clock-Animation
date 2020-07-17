@@ -32,9 +32,9 @@ class MainActivity : AppCompatActivity() {
         val rotate = RotateAnimation(
                 from,
                 to,
-            Animation.RELATIVE_TO_SELF,
+                Animation.RELATIVE_TO_SELF,
             1.0f,
-            Animation.RELATIVE_TO_SELF,
+                Animation.RELATIVE_TO_SELF,
             1.0f
         )
         rotate.duration = 1000
